@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a portfolio page with working internal navigation</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #f4f7fb;
+            color: #222;
+        }
+
+        header {
+            background: #172554;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #1e3a8a;
+            padding: 12px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #facc15;
+        }
+
+        section {
+            padding: 50px 20px;
+            max-width: 900px;
+            margin: auto;
+            scroll-margin-top: 60px;
+        }
+
+        h2 {
+            color: #1e3a8a;
+            margin-bottom: 15px;
+        }
+
+        
+
+       
+       
+
+        
+
+        
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            <h1 style="color: #172554;" text align="center">My Portfolio</h1>
+            <nav>
+                <ul>
+                    <span><a href="#about">About</a></span>
+                    <span><a href="#projects">Projects</a></span>
+                    <span><a href="#contact">Contact</a></span>
+                </ul>
+            </nav>
+            <section id="about">
+                <h2>About Me</h2>
+                <p>Hello! I'm Ayan Khan, a passionate web developer with a focus on creating engaging and user-friendly web experiences.</p>
+            </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <p>Here are some of the projects I've worked on:</p>
+                <ul>
+                    <li>Project 1</li>
+                    <li>Project 2</li>
+                    <li>Project 3</li>
+                </ul>
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Feel free to reach out to me!</p>
+            </section>
+
+        </div>
+
+    </main>
+</body>
+</html>
