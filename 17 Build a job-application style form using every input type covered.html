@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .khan {
+            border: 5px solid black;
+            padding: 20px;
+            margin: 20px;
+            width: fit-content;
+            text-align: center;
+            background-color: #5d6c0a;
+            text-color: rgb(218, 218, 218);
+            font-size: 19px;
+
+        }
+
+        .heading {
+            text-decoration: #e85404;
+        }
+    </style>
+</head>
+<body>
+    <div class="khan">
+    
+<div class="container">
+  <h1>Job Application Form</h1>
+  <p class="subtitle">Please fill in your details carefully.</p>
+
+  <form id="jobForm">
+    <h2>1. Personal Information</h2>
+
+    <div class="field">
+      <label for="name">Full Name *</label>
+      <input type="text" id="name" name="name"
+             placeholder="Enter your full name" required>
+    </div>
+
+    <div class="field">
+      <label for="email">Email Address *</label>
+      <input type="email" id="email" name="email"
+             placeholder="example@email.com" required>
+    </div>
+
+    <div class="field">
+      <label for="phone">Phone Number *</label>
+      <input type="tel" id="phone" name="phone"
+             placeholder="Enter phone number"
+             pattern="[0-9+\-() ]{7,20}" required>
+    </div>
+
+    <div class="field">
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age"
+             min="16" max="100" placeholder="Enter your age">
+    </div>
+
+    <h2>2. Job Preferences</h2>
+
+    <div class="field">
+      <label for="position">Position Applied For *</label>
+      <select id="position" name="position" required>
+        <option value="">-- Select Position --</option>
+        <option>Software Developer</option>
+        <option>Web Designer</option>
+        <option>Data Analyst</option>
+        <option>Marketing Executive</option>
+        <option>HR Associate</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <span class="field-title">Employment Type *</span>
+      <label class="choice">
+        <input type="radio" name="employment"
+               value="Full-time" required> Full-time
+      </label>
+      <label class="choice">
+        <input type="radio" name="employment"
+               value="Part-time"> Part-time
+      </label>
+      <label class="choice">
+        <input type="radio" name="employment"
+               value="Internship"> Internship
+      </label>
+      <label class="choice">
+        <input type="radio" name="employment"
+               value="Contract"> Contract
+      </label>
+    </div>
+
+    <div class="field">
+      <label for="workMode">Work Arrangement</label>
+      <select id="workMode" name="workMode">
+        <option>On-site</option>
+        <option selected>Hybrid</option>
+        <option>Remote</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="education">Education Level</label>
+      <select id="education" name="education">
+        <option value="">-- Select Education --</option>
+        <option>High School</option>
+        <option>Diploma</option>
+        <option>Bachelor's Degree</option>
+        <option>Master's Degree</option>
+        <option>Doctorate</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="experience">Work Experience</label>
+      <select id="experience" name="experience">
+        <option>Fresher</option>
+        <option>1-2 years</option>
+        <option>3-5 years</option>
+        <option>6+ years</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="startDate">Available Start Date</label>
+      <input type="date" id="startDate" name="startDate">
+    </div>
+
+    <div class="field">
+      <label for="salary">Expected Monthly Salary: ₹
+        <span id="salaryValue">50,000</span>
+      </label>
+      <input type="range" id="salary" name="salary"
+             min="10000" max="200000" step="5000"
+             value="50000">
+    </div>
+
+    <h2>3. Skills and Qualifications</h2>
+
+    <div class="field">
+      <span class="field-title">Skills (Select all that apply)</span>
+      <label class="choice">
+        <input type="checkbox" name="skills" value="Communication">
+        Communication
+      </label>
+      <label class="choice">
+        <input type="checkbox" name="skills" value="Programming">
+        Programming
+      </label>
+      <label class="choice">
+        <input type="checkbox" name="skills" value="Problem Solving">
+        Problem Solving
+      </label>
+      <label class="choice">
+        <input type="checkbox" name="skills" value="Leadership">
+        Leadership
+      </label>
+      <label class="choice">
+        <input type="checkbox" name="skills" value="Project Management">
+        Project Management
+      </label>
+      <label class="choice">
+        <input type="checkbox" name="skills" value="Data Analysis">
+        Data Analysis
+      </label>
+    </div>
+</form>
+</div>
+</body>
+</html>
